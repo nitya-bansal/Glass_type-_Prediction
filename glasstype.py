@@ -15,7 +15,7 @@ from sklearn.linear_model import LogisticRegression
 # Loading the dataset.
 @st.cache()
 def load_data():
-    file_path = "glass-types.csv"
+    file_path = "https://s3-student-datasets-bucket.whjr.online/whitehat-ds-datasets/glass-types.csv"
     df = pd.read_csv(file_path, header = None)
     # Droping the 0th column as it contains only the serial numbers.
     df.drop(columns = 0, inplace = True)
